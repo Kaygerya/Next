@@ -1,0 +1,14 @@
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\MyNextMatch.Test.deps.json
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\MyNextMatch.Test.runtimeconfig.json
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\MyNextMatch.Test.runtimeconfig.dev.json
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\MyNextMatch.Test.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\bin\Debug\netcoreapp2.1\MyNextMatch.Test.pdb
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\obj\Debug\netcoreapp2.1\MyNextMatch.Test.csprojAssemblyReference.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\obj\Debug\netcoreapp2.1\MyNextMatch.Test.csproj.CoreCompileInputs.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\obj\Debug\netcoreapp2.1\MyNextMatch.Test.AssemblyInfoInputs.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\obj\Debug\netcoreapp2.1\MyNextMatch.Test.AssemblyInfo.cs
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\obj\Debug\netcoreapp2.1\MyNextMatch.Test.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Test\obj\Debug\netcoreapp2.1\MyNextMatch.Test.pdb

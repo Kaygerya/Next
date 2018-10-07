@@ -1,0 +1,14 @@
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\bin\Debug\netcoreapp2.1\MyNextMatch.Entities.deps.json
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\bin\Debug\netcoreapp2.1\MyNextMatch.Entities.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\bin\Debug\netcoreapp2.1\MyNextMatch.Entities.pdb
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\bin\Debug\netcoreapp2.1\MyNextMatch.Core.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\bin\Debug\netcoreapp2.1\MyNextMatch.Core.pdb
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\obj\Debug\netcoreapp2.1\MyNextMatch.Entities.csprojAssemblyReference.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\obj\Debug\netcoreapp2.1\MyNextMatch.Entities.csproj.CoreCompileInputs.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\obj\Debug\netcoreapp2.1\MyNextMatch.Entities.AssemblyInfoInputs.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\obj\Debug\netcoreapp2.1\MyNextMatch.Entities.AssemblyInfo.cs
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\obj\Debug\netcoreapp2.1\MyNextMatch.Entities.csproj.CopyComplete
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\obj\Debug\netcoreapp2.1\MyNextMatch.Entities.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Entities\obj\Debug\netcoreapp2.1\MyNextMatch.Entities.pdb

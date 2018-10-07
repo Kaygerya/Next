@@ -1,0 +1,24 @@
+﻿@model List<MyNextMatch.Entities.Classes.User>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Get All Users</title>
+</head>
+<body>
+    @foreach (var user in Model)
+    {
+        <div>
+            <b>name:</b> @user.Name<br />
+            <b>surname:</b> @user.Surname<br />
+            <b>email:</b> @user.Email<br />
+            <hr />
+        </div>
+    }
+</body>
+</html>

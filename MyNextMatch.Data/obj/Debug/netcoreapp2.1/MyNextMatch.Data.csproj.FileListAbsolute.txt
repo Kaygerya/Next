@@ -1,0 +1,9 @@
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\bin\Debug\netcoreapp2.1\MyNextMatch.Data.deps.json
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\bin\Debug\netcoreapp2.1\MyNextMatch.Data.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\bin\Debug\netcoreapp2.1\MyNextMatch.Data.pdb
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\obj\Debug\netcoreapp2.1\MyNextMatch.Data.csprojAssemblyReference.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\obj\Debug\netcoreapp2.1\MyNextMatch.Data.csproj.CoreCompileInputs.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\obj\Debug\netcoreapp2.1\MyNextMatch.Data.AssemblyInfoInputs.cache
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\obj\Debug\netcoreapp2.1\MyNextMatch.Data.AssemblyInfo.cs
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\obj\Debug\netcoreapp2.1\MyNextMatch.Data.dll
+E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.Data\obj\Debug\netcoreapp2.1\MyNextMatch.Data.pdb

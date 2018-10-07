@@ -1,0 +1,34 @@
+﻿@model MyNextMatch.Entities.Classes.User;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>InsertUser</title>
+</head>
+<body>
+    <form action="@Url.Action("InsertUser","Default")" method="post">
+        name : @Html.TextBoxFor(model => model.Name)
+        <br />
+        surname:  @Html.TextBoxFor(model => model.Surname)
+        <br />
+        email:   @Html.TextBoxFor(model => model.Email)
+        <br />
+        <button type="submit">Gonder</button>
+        <br />
+        <br /><br />
+
+        @foreach (var error in Model.Errors)
+        {
+            <span style="color:red;">@error</span>
+        }
+        <br />
+        <span style="color:green;">@Model.SuccessMessage</span>
+
+    </form>
+</body>
+</html>
