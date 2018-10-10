@@ -12,3 +12,17 @@ E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.DataAccess\bin\Debug\netcore
 E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.csproj.CopyComplete
 E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.dll
 E:\Projects\MyNextMatch\MyNextMatch.API\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.pdb
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\bin\Debug\netcoreapp2.1\MyNextMatch.DataAccess.deps.json
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\bin\Debug\netcoreapp2.1\MyNextMatch.DataAccess.dll
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\bin\Debug\netcoreapp2.1\MyNextMatch.DataAccess.pdb
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\bin\Debug\netcoreapp2.1\MyNextMatch.Core.dll
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\bin\Debug\netcoreapp2.1\MyNextMatch.Entities.dll
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\bin\Debug\netcoreapp2.1\MyNextMatch.Core.pdb
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\bin\Debug\netcoreapp2.1\MyNextMatch.Entities.pdb
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.csprojAssemblyReference.cache
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.AssemblyInfo.cs
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.csproj.CopyComplete
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.dll
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.DataAccess\obj\Debug\netcoreapp2.1\MyNextMatch.DataAccess.pdb

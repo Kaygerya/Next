@@ -35,6 +35,19 @@ namespace MyNextMatch.AddressAPI
 
             services.AddScoped<IAddressService, AddressService>();
             services.AddScoped<IAddressDAL, EfAddressDAL>();
+
+            services.AddSwaggerGen(options =>
+            {
+                options.DescribeAllEnumsAsStrings();
+                options.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
+                {
+                    Title = "My Next Match - Address HTTP API",
+                    Version = "v1",
+                    Description = "Address Microservice HTTP API. This is a Data-Driven/CRUD microservice sample",
+                    TermsOfService = "Terms Of Service"
+                });
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +59,12 @@ namespace MyNextMatch.AddressAPI
             }
 
             app.UseMvc();
+
+            app.UseSwagger()
+          .UseSwaggerUI(c =>
+          {
+              c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+          });
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyNextMatch.Core.Entities;
@@ -20,10 +21,11 @@ namespace MyNextMatch.API.Controllers
         }
 
         [HttpPut]
+        [ProducesResponseType(typeof(IEntity), (int)HttpStatusCode.OK)]
         public ActionResult<IEntity> Put(int userId, [FromBody] Address value)
         {
             _userAddressService.UpdateUserAddress(userId, value);
-            return value;
+            return Ok(value);
         }
 
         

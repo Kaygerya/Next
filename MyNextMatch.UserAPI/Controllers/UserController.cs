@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyNextMatch.Core.Entities;
@@ -20,16 +21,18 @@ namespace MyNextMatch.UserAPI.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<User>), (int)HttpStatusCode.OK)]
         public ActionResult<IEnumerable<User>> Get()
         {
-            return _userService.GetAll();
+            return Ok(_userService.GetAll());
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(IEntity), (int)HttpStatusCode.OK)]
         public ActionResult<IEntity> Post([FromBody] User value)
         {
             _userService.Insert(value);
-            return value;
+            return Ok(value);
         }
 
     }
