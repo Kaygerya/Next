@@ -61,10 +61,11 @@ namespace MyNextMatch.UserAPI
             app.UseMvc();
 
             app.UseSwagger()
-      .UseSwaggerUI(c =>
-      {
-          c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-      });
+            .UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
         }
     }
 }

@@ -65,6 +65,13 @@ namespace MyNextMatch.AddressAPI
           {
               c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
           });
+
+            app.UseDefaultFiles(new DefaultFilesOptions
+            {
+                DefaultFileNames = new
+            List<string> { "/swagger/index.html" }
+            });
+
         }
     }
 }
