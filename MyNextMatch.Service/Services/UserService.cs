@@ -16,6 +16,7 @@ namespace MyNextMatch.Service.Services
         {
             this._userData = userData;
         }
+
         public void Delete(int userId)
         {
             if (userId == 0)

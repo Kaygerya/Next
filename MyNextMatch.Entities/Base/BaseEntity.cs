@@ -11,8 +11,7 @@ namespace MyNextMatch.Entities.Base
         {
             Errors = new List<string>();
         }
-        [NotMapped]
-        public int Id { get; set; }
+
         [NotMapped]
         public List<string> Errors { get; set; }
         [NotMapped]

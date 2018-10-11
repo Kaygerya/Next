@@ -49,7 +49,7 @@ namespace AspNetCore
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(99, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc4b12d6acb249d0a7a92b7b065643fe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30b4b7af022b4caf9d3a8f0f32ac5968", async() => {
                 BeginContext(105, 92, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>InsertUser</title>\r\n");
                 EndContext();
@@ -69,7 +69,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(206, 608, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7fc041fe789a40fb884c0c21a10ae576", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "498dbaba9fe74ccf9bad43f30efdc104", async() => {
                 BeginContext(212, 11, true);
                 WriteLiteral("\r\n    <form");
                 EndContext();

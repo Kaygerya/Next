@@ -90,7 +90,7 @@ namespace MyNextMatch.WEBTEST.Controllers
         [HttpPost]
         public ActionResult UserAddress( UserAddress useraddress)
         {
-            return UserAddress(useraddress.Id, useraddress);
+            return UserAddress(useraddress.Address.AddressId, useraddress);
         }
 
     }

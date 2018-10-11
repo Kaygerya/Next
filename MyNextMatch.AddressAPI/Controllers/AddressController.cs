@@ -50,7 +50,7 @@ namespace MyNextMatch.AddressAPI.Controllers
                 _addressService.Insert(value);
             }
             //update
-            else if(value.Owner == userId && value.Id > 0)
+            else if(value.Owner == userId && value.AddressId > 0)
                 _addressService.Update(value);
 
             return Ok(value);

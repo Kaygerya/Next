@@ -11,7 +11,7 @@ namespace MyNextMatch.Service.Abstract
         List<User> GetAllUsers();
         User InsertUser(User user);
         Address InsertAddress(Address address);
-        Address UpdateAddress(Address address)
+        Address UpdateAddress(Address address);
         HttpStatusCode DeleteUser(int userId);
     }
 }
