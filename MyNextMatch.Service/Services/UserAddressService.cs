@@ -27,7 +27,7 @@ namespace MyNextMatch.Service.Services
             return JsonConvert.DeserializeObject<List<User>>(responseString);
         }
 
-        public void Insert(User user)
+        public User InsertUser(User user)
         {
             var request = (HttpWebRequest)WebRequest.Create(_settings.UserUrl);
 
@@ -42,18 +42,52 @@ namespace MyNextMatch.Service.Services
             {
                 stream.Write(data, 0, data.Length);
             }
-
-            var response = (HttpWebResponse)request.GetResponse();
-
-            var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-
-            var resultUser = JsonConvert.DeserializeObject<User>(responseString);
-            user.Errors = resultUser.Errors;
+            User resultUser = new User();
+            try
+            {
+                var response = (HttpWebResponse)request.GetResponse();
+                var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                resultUser = JsonConvert.DeserializeObject<User>(responseString);
+            }
+            catch
+            {
+                resultUser.Errors.Add("Error");
+            }
+            return resultUser;
         }
 
-        public void UpdateUserAddress(int userId, Address address)
+        public Address InsertAddress( Address address)
         {
-            var request = (HttpWebRequest)WebRequest.Create(_settings.AddressUrl +"/"+ userId);
+            var request = (HttpWebRequest)WebRequest.Create(_settings.AddressUrl + "/"+ address.Owner);
+
+            var postData = JsonConvert.SerializeObject(address);
+            var data = Encoding.ASCII.GetBytes(postData);
+
+            request.Method = "POST";
+            request.ContentType = "application/json";
+            request.ContentLength = data.Length;
+
+            using (var stream = request.GetRequestStream())
+            {
+                stream.Write(data, 0, data.Length);
+            }
+            Address resultAddress = new Address();
+            try
+            {
+                var response = (HttpWebResponse)request.GetResponse();
+                var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                resultAddress = JsonConvert.DeserializeObject<Address>(responseString);
+            }
+            catch(Exception ex)
+            {
+                resultAddress.Errors.Add("Error");
+            }
+            return resultAddress;
+        }
+
+        public Address UpdateAddress(Address address)
+        {
+            var request = (HttpWebRequest)WebRequest.Create(_settings.AddressUrl + "/" + address.Owner);
 
             var postData = JsonConvert.SerializeObject(address);
             var data = Encoding.ASCII.GetBytes(postData);
@@ -66,11 +100,32 @@ namespace MyNextMatch.Service.Services
             {
                 stream.Write(data, 0, data.Length);
             }
+            Address resultAddress = new Address();
+            try
+            {
+                var response = (HttpWebResponse)request.GetResponse();
+                var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
+                resultAddress = JsonConvert.DeserializeObject<Address>(responseString);
+            }
+            catch (Exception ex)
+            {
+                resultAddress.Errors.Add("Error");
+            }
+            return resultAddress;
+        }
 
+
+
+        public HttpStatusCode DeleteUser(int userId)
+        {
+            var request = (HttpWebRequest)WebRequest.Create(_settings.UserUrl +"/" + userId);
+            request.Method = "DELETE";
             var response = (HttpWebResponse)request.GetResponse();
             var responseString = new StreamReader(response.GetResponseStream()).ReadToEnd();
-            var resultAddress = JsonConvert.DeserializeObject<Address>(responseString);
-            address.Errors = resultAddress.Errors;
+
+            return response.StatusCode;
         }
+
+       
     }
 }

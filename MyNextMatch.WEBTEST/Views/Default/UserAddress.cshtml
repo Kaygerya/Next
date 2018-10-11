@@ -1,4 +1,4 @@
-﻿@model MyNextMatch.Entities.Classes.Address
+﻿@model MyNextMatch.Entities.Classes.UserAddress
 @{
     Layout = null;
 }
@@ -11,14 +11,25 @@
     <title>UserAddress</title>
 </head>
 <body>
-    <form action="@Url.Action("UserAddress","Default", new { userId= Model.Owner })" method="post">
-        PostCode : @Html.TextBoxFor(model => model.PostCode)
+    <form action="@Url.Action("UserAddress","Default", new { userId= Model.User.UserId })" method="post">
+        Id : @Html.TextBoxFor(model => model.User.UserId)
         <br />
-        AddressLine:  @Html.TextBoxFor(model => model.AddressLine)
+        name : @Html.TextBoxFor(model => model.User.Name)
         <br />
-        Owner:   @Html.TextBoxFor(model => model.Owner)
+        surname:  @Html.TextBoxFor(model => model.User.Surname)
         <br />
-        OwnerType:   @Html.TextBoxFor(model => model.OwnerType)
+        email:   @Html.TextBoxFor(model => model.User.Email)
+        <br />
+        <button type="submit">Gonder</button>
+        <br />
+        <br /><br />
+
+
+        PostCode : @Html.TextBoxFor(model => model.Address.PostCode)
+        <br />
+        AddressLine:  @Html.TextBoxFor(model => model.Address.AddressLine)
+        <br />
+        OwnerType:   @Html.TextBoxFor(model => model.Address.OwnerType)
         <br />
         <button type="submit">Gonder</button>
         <br />

@@ -28,7 +28,7 @@ namespace MyNextMatch.API.Controllers
         [HttpPost]
         public ActionResult<IEntity> Post([FromBody] User value)
         {
-            _userAddressService.Insert(value);
+            _userAddressService.InsertUser(value);
             return value;
         }
     }

@@ -15,7 +15,7 @@ namespace MyNextMatch.Entities.Classes
 
         public IEntity GetObject()
         {
-            return new User();
+            return this;
         }
     }
 }

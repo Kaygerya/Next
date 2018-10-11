@@ -35,5 +35,14 @@ namespace MyNextMatch.UserAPI.Controllers
             return Ok(value);
         }
 
+        [HttpDelete]
+        [HttpPost("{userId}")]
+        [ProducesResponseType(typeof(IEntity), (int)HttpStatusCode.OK)]
+        public ActionResult<IEntity> Delete(int userId)
+        {
+            _userService.Delete(userId);
+            return Ok();
+        }
+
     }
 }

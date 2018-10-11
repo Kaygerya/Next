@@ -20,12 +20,47 @@ namespace MyNextMatch.API.Controllers
             _userAddressService = userAddressService;
         }
 
+        [HttpGet]
+        [ProducesResponseType(typeof(IEnumerable<User>), (int)HttpStatusCode.OK)]
+        public ActionResult<IEnumerable<User>> Get()
+        {
+            return Ok(_userAddressService.GetAllUsers());
+        }
+
+        [HttpPost]
+        [ProducesResponseType(typeof(IEntity), (int)HttpStatusCode.OK)]
+        public ActionResult<IEntity> Post([FromBody] User value)
+        {
+            _userAddressService.InsertUser(value);
+            return Ok(value);
+        }
+
         [HttpPut]
         [ProducesResponseType(typeof(IEntity), (int)HttpStatusCode.OK)]
-        public ActionResult<IEntity> Put(int userId, [FromBody] Address value)
+        public ActionResult<IEntity> Put(int userId, [FromBody] UserAddress value)
         {
-            _userAddressService.UpdateUserAddress(userId, value);
-            return Ok(value);
+
+            var userResult = _userAddressService.InsertUser( value.User);
+            if(userResult.IsSuccess)
+            {
+                value.Address.Owner = userResult.UserId;
+                var addressResult =_userAddressService.InsertAddress(value.Address);
+                if(addressResult.IsSuccess)
+                {
+                    value.User = userResult;
+                    value.Address = addressResult;
+                    return Ok(value);
+                }
+                else
+                {
+                    var deleteResponse  =_userAddressService.DeleteUser(userResult.UserId);
+                    return NotFound(deleteResponse);
+                }
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
         

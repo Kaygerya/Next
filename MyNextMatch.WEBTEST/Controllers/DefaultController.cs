@@ -29,7 +29,7 @@ namespace MyNextMatch.WEBTEST.Controllers
         [HttpPost]
         public ActionResult InsertUser(User user)
         {
-            _userAddressService.Insert(user);
+            _userAddressService.InsertUser(user);
             return View(user);
         }
 
@@ -40,25 +40,58 @@ namespace MyNextMatch.WEBTEST.Controllers
         }
 
         [HttpGet]
-        public ActionResult UserAddress(int userId)
+        public ActionResult UserAddress()
         {
-            Address address = new Address();
-            address.Owner = userId;
-            if (TempData["Address"] != null)
+            UserAddress userAddress = new UserAddress();
+
+            if (TempData["UserAddress"] != null)
             {
-                address= (Address)TempData["Address"];
+                userAddress = (UserAddress)TempData["userAddress"];
             }
-            return View(address);
+ 
+            return View(userAddress);
+        }
+
+        [HttpPut]
+        public ActionResult UserAddress(int userId, UserAddress useraddress )
+        {
+            var userResult = _userAddressService.InsertUser(useraddress.User);
+            if(userResult.IsSuccess)
+            {
+                useraddress.Address.Owner = userResult.UserId;
+                Address addressResult = new Address();
+                if(useraddress.Address.AddressId > 0)
+                {
+                    addressResult = _userAddressService.UpdateAddress(useraddress.Address);
+                }
+                else
+                {
+                    addressResult = _userAddressService.InsertAddress(useraddress.Address);
+                }
+               
+                if(addressResult.IsSuccess)
+                {
+                    useraddress.User = userResult;
+                    useraddress.Address = addressResult;
+                    return View(useraddress);
+                }
+                else
+                {
+                    var deleteResponse  =_userAddressService.DeleteUser(userResult.UserId);
+                    return View(useraddress);
+                }
+            }
+            else
+            {
+                return View(useraddress);
+            }
         }
 
         [HttpPost]
-        public ActionResult UserAddress(int userId, Address address)
+        public ActionResult UserAddress( UserAddress useraddress)
         {
-            _userAddressService.UpdateUserAddress(userId, address);
-            TempData["Address"] = address;
-            return UserAddress(userId);
+            return UserAddress(useraddress.Id, useraddress);
         }
 
-        
     }
 }

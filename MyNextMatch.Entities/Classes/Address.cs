@@ -17,7 +17,7 @@ namespace MyNextMatch.Entities.Classes
 
         IEntity IEntity.GetObject()
         {
-            return new Address();
+            return this;
         }
     }
 }
