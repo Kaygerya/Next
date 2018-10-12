@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNextMatch.Core", "MyNextM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNextMatch.Service", "MyNextMatch.Service\MyNextMatch.Service.csproj", "{DB4BC123-D080-4176-95CA-5861386A1E43}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNextMatch.Test", "MyNextMatch.Test\MyNextMatch.Test.csproj", "{6F1D0886-E3FC-4C01-94FF-FC6E75A16A3B}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNextMatch.UserAPI", "MyNextMatch.UserAPI\MyNextMatch.UserAPI.csproj", "{FABB08CB-FDE0-4C9C-B70D-EE1F3DB36799}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNextMatch.AddressAPI", "MyNextMatch.AddressAPI\MyNextMatch.AddressAPI.csproj", "{FB1D3B54-1F11-4F2A-A528-60B38ACF23FB}"

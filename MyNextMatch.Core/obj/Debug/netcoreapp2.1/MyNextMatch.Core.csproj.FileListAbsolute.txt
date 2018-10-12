@@ -21,3 +21,4 @@ C:\Users\Kaygerya\source\repos\Next\MyNextMatch.Core\obj\Debug\netcoreapp2.1\MyN
 C:\Users\Kaygerya\source\repos\Next\MyNextMatch.Core\obj\Debug\netcoreapp2.1\MyNextMatch.Core.csproj.CopyComplete
 C:\Users\Kaygerya\source\repos\Next\MyNextMatch.Core\obj\Debug\netcoreapp2.1\MyNextMatch.Core.dll
 C:\Users\Kaygerya\source\repos\Next\MyNextMatch.Core\obj\Debug\netcoreapp2.1\MyNextMatch.Core.pdb
+C:\Users\Kaygerya\source\repos\Next\MyNextMatch.Core\obj\Debug\netcoreapp2.1\MyNextMatch.Core.csprojAssemblyReference.cache
