@@ -37,9 +37,8 @@ namespace MyNextMatch.API.Controllers
 
         [HttpPut]
         [ProducesResponseType(typeof(IEntity), (int)HttpStatusCode.OK)]
-        public ActionResult<IEntity> Put(int userId, [FromBody] UserAddress value)
+        public ActionResult<UserAddress> Put(int userId, [FromBody] UserAddress value)
         {
-
             var userResult = _userAddressService.InsertUser( value.User);
             if(userResult.IsSuccess)
             {
